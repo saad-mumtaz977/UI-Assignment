@@ -1,0 +1,330 @@
+.navbar {
+    border-bottom: 1px solid #e3e3e3;
+}
+
+#nav-id-one {
+
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.938rem;
+    line-height: 147%;
+
+    color: #272D37;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-right: 1rem;
+
+}
+
+#nav-id-two {
+
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.938rem;
+    line-height: 147%;
+
+    color: #272D37;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-right: 1rem;
+}
+
+#nav-id-four {
+
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.938rem;
+    line-height: 147%;
+
+    color: #272D37;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-right: 1rem;
+}
+
+#nav-id-three {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.938rem;
+    line-height: 147%;
+
+    color: #272D37;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-right: 1rem;
+}
+
+#nav-id-five {
+    margin-right: 0.5rem;
+    border: none;
+    font-weight: 400;
+}
+
+#page-id-one h1 {
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.25rem;
+    line-height: 115%;
+    margin-top: 2.5rem;
+
+    text-align: center;
+    letter-spacing: -0.01em;
+
+
+    color: #272D37;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+#page-id-one-one p {
+    width: 55%;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 144%;
+
+    text-align: center;
+    letter-spacing: -0.006rem;
+
+    /* Gray/50 */
+    color: #5F6D7E;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+
+}
+
+#page-id-two {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#page-id-three img {
+    display: block;
+    /* Ensures the image is a block-level element */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    /* Makes the image responsive by ensuring it doesn't exceed its container's width */
+    height: auto;
+    /* Maintains the aspect ratio of the image */
+}
+
+
+#nav-id-three .nav-link {
+    display: flex;
+    align-items: center;
+}
+
+#nav-id-three .svg {
+    margin-left: 0.25rem;
+    /* Adjust the margin as needed */
+}
+
+#page-id-four {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-top: 2.5rem;
+
+    text-align: center;
+    letter-spacing: -0.01em;
+
+
+    color: #272D37;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    text-align: center;
+}
+
+#page-id-four-one {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 144%;
+    text-align: center;
+    letter-spacing: -0.006rem;
+    color: #5F6D7E;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+    /* Centering */
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    /* Adjust the width as needed */
+    margin-top: 1rem;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.card {
+    margin-right: 1.5rem;
+}
+
+.greypage {
+    background-color: #FAFBFC;
+}
+
+
+
+
+
+@media (min-width: 1200px) {
+
+
+    #page-id-five {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-top: 2.5rem;
+
+        text-align: center;
+        letter-spacing: -0.01em;
+
+
+        color: #272D37;
+
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        text-align: center;
+    }
+
+    #page-id-five-one {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 144%;
+        text-align: center;
+        letter-spacing: -0.006rem;
+        color: #5F6D7E;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+
+        /* Centering */
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        /* Adjust the width as needed */
+        margin-top: 1rem;
+    }
+
+    #page-id-six {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    #page-id-six p {
+        color: blue
+    }
+
+    #page-id-six h3 {
+        width: 25rem;
+    }
+
+    #page-id-six p:nth-last-of-type(1) {
+        width: 32.25rem;
+        height: 4.5rem;
+        color: #5F6D7E;
+    }
+
+    #page-id-seven {
+
+        /* Float the image to the right */
+        margin-top: 3.5rem;
+        margin-left: auto;
+        margin-right: 5.5rem;
+        /* Add some margin to create space between text and image */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    #page-id-five {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-top: 2.5rem;
+
+        text-align: center;
+        letter-spacing: -0.01em;
+
+
+        color: #272D37;
+
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        text-align: center;
+    }
+
+    #page-id-five-one {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 144%;
+        text-align: center;
+        letter-spacing: -0.006rem;
+        color: #5F6D7E;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+
+        /* Centering */
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        /* Adjust the width as needed */
+        margin-top: 1rem;
+    }
+}
