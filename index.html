@@ -11,216 +11,8 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>UI Assignment</title>
-    <style>
-        .navbar {
-            border-bottom: 1px solid #e3e3e3;
-        }
-
-        #nav-id-one {
-
-
-            font-style: normal;
-            font-weight: 600;
-            font-size: 0.938rem;
-            line-height: 147%;
-
-            color: #272D37;
-
-            flex: none;
-            order: 1;
-            flex-grow: 0;
-            margin-right: 1rem;
-
-        }
-
-        #nav-id-two {
-
-
-            font-style: normal;
-            font-weight: 600;
-            font-size: 0.938rem;
-            line-height: 147%;
-
-            color: #272D37;
-
-            flex: none;
-            order: 1;
-            flex-grow: 0;
-            margin-right: 1rem;
-        }
-
-        #nav-id-four {
-
-
-            font-style: normal;
-            font-weight: 600;
-            font-size: 0.938rem;
-            line-height: 147%;
-
-            color: #272D37;
-
-            flex: none;
-            order: 1;
-            flex-grow: 0;
-            margin-right: 1rem;
-        }
-
-        #nav-id-three {
-            font-style: normal;
-            font-weight: 600;
-            font-size: 0.938rem;
-            line-height: 147%;
-
-            color: #272D37;
-
-            flex: none;
-            order: 1;
-            flex-grow: 0;
-            margin-right: 1rem;
-        }
-
-        #nav-id-five {
-            margin-right: 0.5rem;
-            border: none;
-            font-weight: 400;
-        }
-
-        #page-id-one h1 {
-
-            font-style: normal;
-            font-weight: 700;
-            font-size: 3.25rem;
-            line-height: 115%;
-            margin-top: 2.5rem;
-
-            text-align: center;
-            letter-spacing: -0.01em;
-
-
-            color: #272D37;
-
-            flex: none;
-            order: 0;
-            align-self: stretch;
-            flex-grow: 0;
-
-        }
-
-        #page-id-one-one p {
-            width: 55%;
-
-            font-style: normal;
-            font-weight: 400;
-            font-size: 1.125rem;
-            line-height: 144%;
-
-            text-align: center;
-            letter-spacing: -0.006rem;
-
-            /* Gray/50 */
-            color: #5F6D7E;
-
-
-            /* Inside auto layout */
-            flex: none;
-            order: 1;
-            align-self: stretch;
-            flex-grow: 0;
-
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 1rem;
-
-        }
-
-        #page-id-two {
-            margin-left: auto;
-            margin-right: auto;
-
-        }
-
-        #page-id-three img {
-            display: block;
-            /* Ensures the image is a block-level element */
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 100%;
-            /* Makes the image responsive by ensuring it doesn't exceed its container's width */
-            height: auto;
-            /* Maintains the aspect ratio of the image */
-        }
-
-
-        #nav-id-three .nav-link {
-            display: flex;
-            align-items: center;
-        }
-
-        #nav-id-three .svg {
-            margin-left: 0.25rem;
-            /* Adjust the margin as needed */
-        }
-
-        #page-id-four {
-            font-style: normal;
-            font-weight: 700;
-            font-size: 2rem;
-            line-height: 2.5rem;
-            margin-top: 2.5rem;
-
-            text-align: center;
-            letter-spacing: -0.01em;
-
-
-            color: #272D37;
-
-            flex: none;
-            order: 0;
-            align-self: stretch;
-            flex-grow: 0;
-            text-align: center;
-        }
-
-        #page-id-four-one {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 1.125rem;
-            line-height: 144%;
-            text-align: center;
-            letter-spacing: -0.006rem;
-            color: #5F6D7E;
-
-            /* Inside auto layout */
-            flex: none;
-            order: 1;
-            align-self: stretch;
-            flex-grow: 0;
-
-            /* Centering */
-            margin-left: auto;
-            margin-right: auto;
-            width: 80%;
-            /* Adjust the width as needed */
-            margin-top: 1rem;
-        }
-
-        #container {
-            display: flex;
-            align-items: center;
-            margin-bottom: 2rem;
-        }
-
-        #coffee-icon {
-            margin-right: 11.25rem;
-            /* Adjust the margin as needed for spacing between the image and the button */
-        }
-
-        #container a {
-            color: black;
-            border: 2px solid #d6d4d4;
-        }
-    </style>
-
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
@@ -334,7 +126,7 @@
         </div>
     </div>
     <div id="page-id-three">
-        <img src="Image1.png" alt="first image">
+        <img src="Pictures/Image1.png" alt="first image">
     </div>
 
     <div id="page-id-four">
@@ -343,46 +135,134 @@
             diversity and empowerment.</div>
     </div>
 
-    <div style="display: flex; justify-content: center;">
-        <div class="card"
-            style="width: 24rem; height: 12rem; border-radius: 0.313rem; margin-left: 4rem; margin-top: 2rem;">
-            <div class="card-body">
-                <div id="container">
-                    <img id="coffee-icon" src="Icon1.png" alt="coffee icon">
-                    <a href="#" class="btn">Show More</a>
-                </div>
 
-                <h5 class="card-title">Wireless</h5>
+
+    <!--this section is not correct will do it later-->
+
+
+    <div class="cards-container">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <a href="#" class="btn" style="color: black; border: 1px solid #DAE0E6; float: right">Show More</a>
+                <img src="Icons/Icon1.png" alt="">
+                <h5 class="card-title" style="margin-top: 1.5rem;">Wireless</h5>
                 <p class="card-text">Enim nec rhoncus volutpat nullam eros sapien pharetra.</p>
             </div>
         </div>
-
-        <div class="card"
-            style="width: 24rem; height: 12rem; border-radius: 0.313rem; margin-left: 4rem; margin-top: 2rem;">
+        <div class="card" style="width: 18rem;">
             <div class="card-body">
-                <div id="container">
-                    <img id="coffee-icon" src="Icon1.png" alt="coffee icon">
-                    <a href="#" class="btn">Show More</a>
-                </div>
-
-                <h5 class="card-title">Wireless</h5>
-                <p class="card-text">Enim nec rhoncus volutpat nullam eros sapien pharetra.</p>
+                <a href="#" class="btn" style="color: black; border: 1px solid #DAE0E6; float: right">Show More</a>
+                <img src="Icons/Icon1.png" alt="">
+                <h5 class="card-title" style="margin-top: 1.5rem;">Synergistic</h5>
+                <p class="card-text" style="color: grey">Neque ut integer nulla tellus semper amet id scelerisque eros.
+                </p>
             </div>
         </div>
-
-        <div class="card"
-            style="width: 24rem; height: 12rem; border-radius: 0.313rem; margin-left: 4rem; margin-top: 2rem;">
+        <div class="card" style="width: 18rem;">
             <div class="card-body">
-                <div id="container">
-                    <img id="coffee-icon" src="Icon1.png" alt="coffee icon">
-                    <a href="#" class="btn">Show More</a>
-                </div>
-
-                <h5 class="card-title">Wireless</h5>
-                <p class="card-text">Enim nec rhoncus volutpat nullam eros sapien pharetra.</p>
+                <a href="#" class="btn" style="color: black; border: 1px solid #DAE0E6; float: right">Show More</a>
+                <img src="Icons/Icon1.png" alt="">
+                <h5 class="card-title" style="margin-top: 1.5rem;">Wireless</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
             </div>
         </div>
     </div>
+
+    <div class="cards-container">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <a href="#" class="btn" style="color: black; border: 1px solid #DAE0E6; float: right">Show More</a>
+                <img src="Icons/Icon1.png" alt="">
+                <h5 class="card-title" style="margin-top: 1.5rem;">Wireless</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <a href="#" class="btn" style="color: black; border: 1px solid #DAE0E6; float: right">Show More</a>
+                <img src="Icons/Icon1.png" alt="">
+                <h5 class="card-title" style="margin-top: 1.5rem;">Wireless</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <a href="#" class="btn" style="color: black; border: 1px solid #DAE0E6; float: right">Show More</a>
+                <img src="Icons/Icon1.png" alt="">
+                <h5 class="card-title" style="margin-top: 1.5rem;">Wireless</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--this section is not correct will do it later-->
+
+
+
+    <div style=" display: flex; justify-content: center; margin: 1.5rem;">
+        <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"
+            style="margin-right: 0.5rem; color: #FFFF;">
+            Reveal All Channels
+        </button>
+    </div>
+
+
+    <script>
+        function showAppropriateLayout() {
+            var screenWidth = $(window).width();
+
+            if (screenWidth >= 1200) {
+                // Show layout1 on larger screens
+                $("#layout1").show();
+            } else {
+                // Show layout2 on smaller screens
+                $("#layout1").hide();
+            }
+        }
+
+        // Call the function on page load and resize
+        $(document).ready(function () {
+            showAppropriateLayout();
+            $(window).on('resize', showAppropriateLayout);
+        });
+    </script>
+
+
+    <div id="layout1">
+        <div class="greypage">
+            <div id="page-id-five">
+                <h1>Redefining Product Features</h1>
+                <div id="page-id-five-one">Keeping your eye on the ball while performing a deep dive on the start-up
+                    mentality to derive convergence on cross-platform integration.</div>
+            </div>
+            <div id="page-id-six">
+                <div style="margin-left: 5.5rem;">
+                    <p>1% OF THE INDUTRY</p>
+                    <h3>Demonstrate branding consequently think outside the
+                        box and beyond.</h3>
+                    <p>
+                        Velit purus egestas tellus phasellus. Mattis eget sed faucibus magna vulputate pellentesque a
+                        diam
+                        tincidunt. Aenean malesuada tellus tellus faucibus mauris quisque mauris in.
+                    </p>
+
+                    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false"
+                        autocomplete="off" style="margin-right: 0.5rem; color: #FFFF;">
+                        Start Now <img src="Icons/Icon3.png" alt="arrow icon">
+                    </button>
+                </div>
+                <div id="page-id-seven"><img src="Pictures/Image2.png" alt="second image"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
 
 
 
