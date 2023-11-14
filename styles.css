@@ -202,129 +202,224 @@
 
 .greypage {
     background-color: #FAFBFC;
+    padding: 64px 0 64px 0
 }
 
+#page-id-five,
+#page-id-eight {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-top: 2.5rem;
+
+    text-align: center;
+    letter-spacing: -0.01em;
 
 
+    color: #272D37;
 
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    text-align: center;
+}
 
-@media (min-width: 1200px) {
+#page-id-five-one,
+#page-id-eight-one {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 144%;
+    text-align: center;
+    letter-spacing: -0.006rem;
+    color: #5F6D7E;
 
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
 
-    #page-id-five {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 2rem;
-        line-height: 2.5rem;
-        margin-top: 2.5rem;
+    /* Centering */
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    /* Adjust the width as needed */
+    margin-top: 1rem;
+}
 
-        text-align: center;
-        letter-spacing: -0.01em;
+#page-id-six {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
 
+#page-id-six p {
+    color: blue
+}
 
-        color: #272D37;
+#page-id-six h3 {
+    width: 25rem;
+    color: #272D37
+}
 
-        flex: none;
-        order: 0;
-        align-self: stretch;
-        flex-grow: 0;
-        text-align: center;
-    }
+#page-id-six p:nth-last-of-type(1) {
+    width: 32.25rem;
+    height: 4.5rem;
+    color: #5F6D7E;
+}
 
-    #page-id-five-one {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1.125rem;
-        line-height: 144%;
-        text-align: center;
-        letter-spacing: -0.006rem;
-        color: #5F6D7E;
+#page-id-seven {
 
-        /* Inside auto layout */
-        flex: none;
-        order: 1;
-        align-self: stretch;
-        flex-grow: 0;
+    /* Float the image to the right */
+    max-width: 100%;
+    width: 35rem;
+    height: auto;
+    margin-top: 3.5rem;
+    margin-left: auto;
+    margin-right: 5.5rem;
+    /* Add some margin to create space between text and image */
+}
 
-        /* Centering */
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-        /* Adjust the width as needed */
-        margin-top: 1rem;
-    }
+#layout2 {
+    padding: 2.5rem;
+}
 
-    #page-id-six {
-        display: flex;
-        width: 100%;
-        align-items: center;
-    }
+#layout2-image img {
+    max-width: 100%;
+    width: 44rem;
+    /* Set a maximum width if needed */
+    height: auto;
+    /* Maintain the aspect ratio */
+}
 
-    #page-id-six p {
-        color: blue
-    }
+#layout3 {}
 
-    #page-id-six h3 {
-        width: 25rem;
-    }
+#bluepage {
+    background-color: #2B63D9;
+    padding: 4rem 2rem 4rem 2rem;
+}
 
-    #page-id-six p:nth-last-of-type(1) {
-        width: 32.25rem;
-        height: 4.5rem;
-        color: #5F6D7E;
-    }
+#layout3-flex {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
 
-    #page-id-seven {
+#layout3-image {
+    max-width: 100%;
+    width: 35rem;
+    height: auto;
+    margin-top: 3.5rem;
+    margin-left: auto;
+    margin-right: 5.5rem;
+}
 
-        /* Float the image to the right */
-        margin-top: 3.5rem;
-        margin-left: auto;
-        margin-right: 5.5rem;
-        /* Add some margin to create space between text and image */
+#page-id-ten {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#page-id-ten p,
+h3 {
+    color: white;
+}
+
+#page-id-ten p:nth-last-of-type(1) {
+    color: #B1CCFB;
+}
+
+#bluepage2 {
+    background-color: #2B63D9;
+    padding: 2.5rem 2rem 2.5rem 2rem;
+}
+
+#layout4-image img {
+
+    width: 44rem;
+    /* Set a maximum width if needed */
+    height: auto;
+    /* Maintain the aspect ratio */
+}
+
+.cards-design {
+    display: grid;
+}
+
+/* For screens with width >= 1200px */
+@media screen and (min-width: 1200px) {
+    .cards-design {
+        justify-content: center;
+        margin-top: 1.5rem;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 1.5rem;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-    #page-id-five {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 2rem;
-        line-height: 2.5rem;
-        margin-top: 2.5rem;
-
-        text-align: center;
-        letter-spacing: -0.01em;
-
-
-        color: #272D37;
-
-        flex: none;
-        order: 0;
-        align-self: stretch;
-        flex-grow: 0;
-        text-align: center;
+/* For screens with width < 1200px and >= 768px (tablets) */
+@media screen and (max-width: 1199px) {
+    .cards-design {
+        justify-content: center;
+        margin-top: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 1.5rem;
     }
+}
 
-    #page-id-five-one {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1.125rem;
-        line-height: 144%;
-        text-align: center;
-        letter-spacing: -0.006rem;
-        color: #5F6D7E;
-
-        /* Inside auto layout */
-        flex: none;
-        order: 1;
-        align-self: stretch;
-        flex-grow: 0;
-
-        /* Centering */
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-        /* Adjust the width as needed */
-        margin-top: 1rem;
+/* For screens with width < 768px (mobile) */
+@media screen and (max-width: 767px) {
+    .cards-design {
+        justify-content: center;
+        margin-top: 1.5rem;
+        grid-template-columns: 1fr;
+        margin-bottom: 1.5rem;  
     }
+}
+
+/* Center-align the cards within each grid item */
+.cards-design .card {
+    justify-self: center;
+}
+
+.whitepage2 {
+    display: grid;
+    justify-content: center; /* Center the grid horizontally */
+    text-align: center; /* Center-align the content within each grid item */
+    margin-top: 1.5rem;
+}
+
+/* For screens with width >= 1200px */
+@media screen and (min-width: 1200px) {
+    #laptop-layout {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr; /* Single row */
+    }
+}
+
+/* For screens with width < 1200px and >= 768px (tablets) */
+@media screen and (max-width: 1199px) {
+    #laptop-layout {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr; /* Single row */
+    }
+}
+
+/* For screens with width < 768px (mobile) */
+@media screen and (max-width: 767px) {
+    #laptop-layout {
+        grid-template-columns: 1fr; /* Single column */
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+/* Center-align the content within each grid item */
+#laptop-layout > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem; /* Add padding for better spacing */
 }

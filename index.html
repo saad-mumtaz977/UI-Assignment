@@ -13,7 +13,78 @@
     <title>UI Assignment</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic styling for the card */
+        .card {
+            display: flex;
+            align-items: center;
+            max-width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: #F8F9FB;
+        }
 
+        /* Blue text on the left, vertically centered */
+        .industry-text {
+            color: #007BFF;
+            /* Blue color */
+            line-height: 1.2;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Heading text */
+        .heading-text {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        /* Input and button container */
+
+        /* Email input */
+        .email-input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        /* Submit button */
+        .submit-btn {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        @media screen and (min-width: 1200px) {
+            .cards-container {
+                display: grid;
+                grid-template-columns: 21.25rem 21.25rem 21.25rem;
+                justify-content: center;
+            }
+        }
+
+        @media screen and (max-width: 1199px) {
+            .cards-container {
+                display: grid;
+                grid-template-columns: 21.25rem 21.25rem;
+                justify-content: center;
+            }
+
+            @media screen and (max-width: 767px) {
+                .cards-container {
+                    display: grid;
+                    grid-template-columns: 21.25rem;
+                    justify-content: center;
+                }
+    </style>
 </head>
 
 <body>
@@ -141,63 +212,64 @@
 
 
     <div class="cards-container">
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 21.25rem; background-color: #FFFF; border: 1px solid #EAEBF0">
             <div class="card-body">
                 <a href="#" class="btn" style="color: black; border: 1px solid #DAE0E6; float: right">Show More</a>
                 <img src="Icons/Icon1.png" alt="">
                 <h5 class="card-title" style="margin-top: 1.5rem;">Wireless</h5>
-                <p class="card-text">Enim nec rhoncus volutpat nullam eros sapien pharetra.</p>
+                <p class="card-text" style="color: grey">Enim nec rhoncus volutpat nullam eros sapien pharetra.</p>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 21.25rem; background-color: #FFFF; border: 1px solid #EAEBF0">
             <div class="card-body">
                 <a href="#" class="btn" style="color: black; border: 1px solid #DAE0E6; float: right">Show More</a>
-                <img src="Icons/Icon1.png" alt="">
+                <img src="Icons/Icon7.png" alt="">
                 <h5 class="card-title" style="margin-top: 1.5rem;">Synergistic</h5>
                 <p class="card-text" style="color: grey">Neque ut integer nulla tellus semper amet id scelerisque eros.
                 </p>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 21.25rem; background-color: #FFFF; border: 1px solid #EAEBF0">
             <div class="card-body">
                 <a href="#" class="btn" style="color: black; border: 1px solid #DAE0E6; float: right">Show More</a>
-                <img src="Icons/Icon1.png" alt="">
-                <h5 class="card-title" style="margin-top: 1.5rem;">Wireless</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <img src="Icons/Icon6.png" alt="">
+                <h5 class="card-title" style="margin-top: 1.5rem;">Distributed</h5>
+                <p class="card-text" style="color: grey">Aliquet et cras nam sed mauris laoreet bibendum et.</p>
             </div>
         </div>
     </div>
 
     <div class="cards-container">
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 21.25rem; background-color: #FFFF; border: 1px solid #EAEBF0">
             <div class="card-body">
                 <a href="#" class="btn" style="color: black; border: 1px solid #DAE0E6; float: right">Show More</a>
-                <img src="Icons/Icon1.png" alt="">
-                <h5 class="card-title" style="margin-top: 1.5rem;">Wireless</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <img src="Icons/Icon8.png" alt="">
+                <h5 class="card-title" style="margin-top: 1.5rem;">Seamless</h5>
+                <p class="card-text" style="color: grey">Lacus vulputate vel metus massa platea ut pellentesque turpis.
+                </p>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 21.25rem; background-color: #FFFF; border: 1px solid #EAEBF0">
             <div class="card-body">
                 <a href="#" class="btn" style="color: black; border: 1px solid #DAE0E6; float: right">Show More</a>
-                <img src="Icons/Icon1.png" alt="">
-                <h5 class="card-title" style="margin-top: 1.5rem;">Wireless</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <img src="Icons/Icon9.png" alt="">
+                <h5 class="card-title" style="margin-top: 1.5rem;">Revolutionary</h5>
+                <p class="card-text" style="color: grey">Mauris orci eget iaculis placerat euismod at urna posuere.</p>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 21.25rem; background-color: #FFFF; border: 1px solid #EAEBF0">
             <div class="card-body">
                 <a href="#" class="btn" style="color: black; border: 1px solid #DAE0E6; float: right">Show More</a>
-                <img src="Icons/Icon1.png" alt="">
-                <h5 class="card-title" style="margin-top: 1.5rem;">Wireless</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <img src="Icons/Icon10.png" alt="">
+                <h5 class="card-title" style="margin-top: 1.5rem;">Web-enabled</h5>
+                <p class="card-text" style="color: grey">Mauris orci eget iaculis placerat euismod at urna posuere.</p>
             </div>
         </div>
     </div>
 
 
 
-    <!--this section is not correct will do it later-->
+    <!--=============================================================================-->
 
 
 
@@ -214,15 +286,15 @@
             var screenWidth = $(window).width();
 
             if (screenWidth >= 1200) {
-                // Show layout1 on larger screens
                 $("#layout1").show();
+                $("#layout2").hide();
+                0
             } else {
-                // Show layout2 on smaller screens
                 $("#layout1").hide();
+                $("#layout2").show();
             }
         }
 
-        // Call the function on page load and resize
         $(document).ready(function () {
             showAppropriateLayout();
             $(window).on('resize', showAppropriateLayout);
@@ -259,9 +331,357 @@
     </div>
 
 
+    <div id="layout2">
+        <div class="greypage">
+            <div id="page-id-eight">
+                <h1>Redefining Product Features</h1>
+                <div id="page-id-eight-one">Keeping your eye on the ball while performing a deep dive on the start-up
+                    mentality to derive convergence on cross-platform integration.</div>
+                <div id="layout2-image">
+                    <img src="Pictures/Image3.png" alt="layout2 image">
+                </div>
+                <p style="color: blue; font-size: 14px;line-height: 20px; font-weight: 600;margin-top: 2rem;">1% OF THE
+                    INDUTRY</p>
+                <h3 style="font-weight: 600; line-height: 42px; color:  #272D37;
+                ">Demonstrate branding consequently think outside the
+                    box and beyond.</h3>
+                <p style="color: #5F6D7E; font-size: 14px; font-weight: 600;">
+                    Velit purus egestas tellus phasellus. Mattis eget sed faucibus magna vulputate pellentesque a
+                    diam
+                    tincidunt. Aenean malesuada tellus tellus faucibus mauris quisque mauris in.
+                </p>
 
-    <!-- adding a comment-->
+                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false"
+                    autocomplete="off" style="margin-right: 0.5rem; color: #FFFF;">
+                    Start Now <img src="Icons/Icon3.png" alt="arrow icon">
+                </button>
+            </div>
+        </div>
+    </div>
 
+
+    <!--Java Script-->
+
+    <script>
+        function showAppropriateLayoutSecond() {
+            var screenWidth1 = $(window).width();
+
+            if (screenWidth1 >= 1200) {
+                $("#layout3").show();
+                $("#layout4").hide();
+            } else if (screenWidth1 < 1200) {
+                $("#layout3").hide();
+                $("#layout4").show();
+            }
+        }
+
+        $(document).ready(function () {
+            showAppropriateLayoutSecond();
+            $(window).on('resize', showAppropriateLayoutSecond);
+        });
+    </script>
+
+
+
+    <!--Layout 3 for desktop-->
+
+    <div id="layout3">
+        <div id="bluepage">
+            <div id="layout3-flex">
+                <div id="layout3-image">
+                    <img src="Pictures/Image3.png" alt="layout 3 image">
+                </div>
+                <div id="page-id-ten">
+                    <div style="margin-left: 5.5rem;">
+                        <p>1% OF THE INDUTRY</p>
+                        <h3>Demonstrate branding consequently think outside the
+                            box and beyond.</h3>
+                        <p>
+                            Velit purus egestas tellus phasellus. Mattis eget sed faucibus magna vulputate pellentesque
+                            a
+                            diam
+                            tincidunt. Aenean malesuada tellus tellus faucibus mauris quisque mauris in.
+                        </p>
+
+                        <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false"
+                            autocomplete="off" style="margin-right: 0.5rem; color: #FFFF;">
+                            Start Now <img src="Icons/Icon3.png" alt="arrow icon">
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Layout 4 for mobile and tablet-->
+
+
+    <div id="layout4">
+        <div id="bluepage2">
+            <div id="page-id-eight">
+                <div id="layout2-image">
+                    <img src="Pictures/Image3.png" alt="layout2 image">
+                </div>
+                <p style="color: white; font-size: 14px;line-height: 20px; font-weight: 600;margin-top: 2rem;">1% OF THE
+                    INDUTRY</p>
+                <h3 style="font-weight: 600; line-height: 42px; color:white">Demonstrate branding consequently think
+                    outside the
+                    box and beyond.</h3>
+                <p style="color: #B1CCFB; font-size: 14px; font-weight: 600;">
+                    Velit purus egestas tellus phasellus. Mattis eget sed faucibus magna vulputate pellentesque a
+                    diam
+                    tincidunt. Aenean malesuada tellus tellus faucibus mauris quisque mauris in.
+                </p>
+
+                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false"
+                    autocomplete="off" style="margin-right: 0.5rem; color: #FFFF;">
+                    Start Now <img src="Icons/Icon3.png" alt="arrow icon">
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- javascript-->
+
+    <script>
+        function showAppropriateLayoutThird() {
+            var screenWidth2 = $(window).width();
+
+            if (screenWidth2 >= 1200) {
+                $("#layout5").show();
+                $("#layout6").hide();
+            } else if (screenWidth2 < 1200) {
+                $("#layout5").hide();
+                $("#layout6").show();
+            }
+        }
+
+        $(document).ready(function () {
+            showAppropriateLayoutThird();
+            $(window).on('resize', showAppropriateLayoutThird);
+        });
+    </script>
+
+
+
+    <!-- layout 5-->
+
+    <div id="layout5" style="background-color: #FAFBFC;">
+        <div id="page-id-six">
+            <div style="margin-left: 5.5rem;">
+                <h3>Demonstrate branding consequently think outside</h3>
+                <p style="color: #5F6D7E; max-width: 33.25rem; max-height: 4.5rem;">
+                    Velit purus egestas tellus phasellus. Mattis eget sed faucibus magna vulputate pellentesque a
+                    diam
+                    tincidunt. Aenean malesuada tellus tellus faucibus mauris quisque mauris in.
+                </p>
+                <p style="color: #5F6D7E;">
+                    <img src="Icons/Icon4.png" alt="icon4"> Enterprise-grade security
+                </p>
+                <p style="color: #5F6D7E;">
+                    <img src="Icons/Icon4.png" alt="icon4"> 99.9% guaranteed uptime SLA
+                </p>
+                <p style="color: #5F6D7E; margin-bottom: 0;">
+                    <img src="Icons/Icon4.png" alt="icon4"> Designated customer success team
+                </p>
+                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false"
+                    autocomplete="off" style="margin-right: 0.5rem; color: #FFFF; margin-top: 0;">
+                    Start Now <img src="Icons/Icon3.png" alt="arrow icon">
+                </button>
+            </div>
+            <div id="page-id-seven"><img src="Pictures/Image4.png" alt="second image"></div>
+        </div>
+    </div>
+
+
+    <!-- layout 6-->
+
+    <div id="layout6">
+        <div class="greypage" style="background-color: #FAFBFC;">
+            <div id="page-id-eight">
+                <div id="layout2-image">
+                    <img src="Pictures/Image3.png" alt="layout2 image">
+                </div>
+                <p style="color: blue; font-size: 14px;line-height: 20px; font-weight: 600;margin-top: 2rem;">1% OF THE
+                    INDUTRY</p>
+                <h3 style="font-weight: 600; line-height: 42px; color:  #272D37;
+                ">Demonstrate branding consequently think outside the
+                    box and beyond.</h3>
+                <p style="color: #5F6D7E; font-size: 14px; font-weight: 600;">
+                    Velit purus egestas tellus phasellus. Mattis eget sed faucibus magna vulputate pellentesque a
+                    diam
+                    tincidunt. Aenean malesuada tellus tellus faucibus mauris quisque mauris in.
+                </p>
+
+                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false"
+                    autocomplete="off" style="margin-right: 0.5rem; color: #FFFF;">
+                    Start Now <img src="Icons/Icon3.png" alt="arrow icon">
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="whitepage" style="background-color: #FFFF;">
+        <div id="page-id-eight">
+            <h1>Latest Blog Post</h1>
+            <div id="page-id-eight-one" style="max-width: 50rem;">Completely synergize resource taxing relationships via
+                premier niche markets. Professionally cultivate one-to-one customer service with robust ideas.</div>
+        </div>
+        <div class="cards-design">
+            <div class="card" style="width: 24rem;">
+                <img class="card-img-top" src="Pictures/Switch1.png" alt="Card image cap">
+                <div class="card-body">
+                    <img src="Pictures/Container1.png" alt="">
+                    <h5 class="card-title" style="max-width: 20rem; height: 3.75rem; color:
+                    #272D37">Organize your digital assets
+                        with a new methodology.</h5>
+                    <p class="card-text" style="color: #5F6D7E;">Leverage agile frameworks to provide a robust synopsis
+                        for high level overviews. Iterative approaches to corporate.</p>
+                    <a href="#" class="btn" style="color: #437EF7;">Learn More <img src="Icons/Icon5.png" alt=""></a>
+                </div>
+            </div>
+
+
+
+            <div class="card" style="width: 24rem;">
+                <img class="card-img-top" src="Pictures/Switch2.png" alt="Card image cap">
+                <div class="card-body">
+                    <img src="Pictures/Container2.png" alt="">
+                    <h5 class="card-title" style="max-width: 20rem; height: 3.75rem; color:
+                    #272D37">Faster ways to reach your customers and their needs.</h5>
+                    <p class="card-text" style="color: #5F6D7E;">Capitalize on low hanging fruit to identify a ballpark
+                        value added activity to beta test override the digital divide.</p>
+                    <a href="#" class="btn" style="color: #437EF7;">Learn More <img src="Icons/Icon5.png" alt=""></a>
+                </div>
+            </div>
+
+
+
+
+            <div class="card" style="width: 24rem;">
+                <img class="card-img-top" src="Pictures/Switch3.png" alt="Card image cap">
+                <div class="card-body">
+                    <img src="Pictures/Container3.png" alt="">
+                    <h5 class="card-title" style="max-width: 20rem; height: 3.75rem; color:
+                    #272D37">Gestalt psychology in UI/UX
+                        design and beyond.</h5>
+                    <p class="card-text" style="color: #5F6D7E;">Bring to the table win-win strategies to proactive
+                        domination. At the end of the day, going forward.</p>
+                    <a href="#" class="btn" style="color: #437EF7;">Learn More <img src="Icons/Icon5.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="whitepage2">
+        <div id="page-id-eight">
+            <h1>What Our Customers Say</h1>
+            <div id="page-id-eight-one" style="max-width: 50rem;">Organically grow the holistic world view of
+                disruptive innovation via workplace diversity and empowerment. Bring to the table win-win strategies to
+                ensure domination.</div>
+
+            <div id="laptop-layout" style="display: grid;">
+                <div id="one">
+                    <img src="Pictures/Avatar group.png" alt="" style="margin-top: 3rem;">
+                    <h6 style="font-weight: 500;">Repurpose analytics with the possibility to come</h6>
+                </div>
+
+                <div id="two">
+                    <img src="Pictures/frame stars.png" alt="" style="margin-top: 3rem;">
+                    <h6 style="font-weight: 500;">5 out of 5 stars from 123 reviews from our users</h6>
+                </div>
+
+                <div id="three">
+                    <img src="Pictures/Icon.png" alt="" style="margin-top: 3rem;">
+                    <h6 style="font-weight: 500;">Repurpose analytics with the possibility to come up.</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="padding: 4rem 0 4rem 0;">
+        <div class="card" style="display: flex;">
+            <div>
+                <div class="industry-text">1% of the industry</div>
+                <div class="heading-text">Welcome to your new digital reality that will rock your world.</div>
+            </div>
+
+
+            <!-- Input and button container -->
+            <div class="input-container">
+                <!-- Email input -->
+                <input type="email" class="email-input" placeholder="Enter your email">
+
+                <!-- Submit button -->
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        function showAppropriateLayoutFourth() {
+            var screenWidth2 = $(window).width();
+
+            if (screenWidth2 >= 1200) {
+                $("#forlaptop").show();
+                $("#fortab").hide();
+                $("#formbl").hide();
+            } else if (screenWidth2 < 1200 && screenWidth2 > 490) {
+                $("#forlaptop").hide();
+                $("#fortab").show();
+                $("#formbl").hide();
+            }
+            else{
+                $("#forlaptop").hide();
+                $("#fortab").hide();
+                $("#formbl").show();
+            }
+        }
+
+        $(document).ready(function () {
+            showAppropriateLayoutFourth();
+            $(window).on('resize', showAppropriateLayoutFourth);
+        });
+    </script>
+
+    <DIV id="forlaptop">
+        <div style="padding: 64px 64px 64px 64px;">
+            <div>
+                <img src="Pictures/Container.png" alt="">
+            </div>
+        </div>
+    </DIV>
+
+
+    <div id="fortab">
+        <div style="padding: 40px 32px 40px 32px;">
+            <div>
+                <img src="Pictures/Footer.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="formbl">
+        <div style="padding: 32px 16px 32px 16px;">
+            <div>
+                <img src="Pictures/Containermbl.png" alt="">
+            </div>
+        </div>
+    </div>
 
 
 
