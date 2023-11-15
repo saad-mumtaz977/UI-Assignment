@@ -14,60 +14,13 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Basic styling for the card */
-        .card {
-            display: flex;
-            align-items: center;
-            max-width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-            border: none;
-            border-radius: 10px;
-            background-color: #F8F9FB;
-        }
-
-        /* Blue text on the left, vertically centered */
-        .industry-text {
-            color: #007BFF;
-            /* Blue color */
-            line-height: 1.2;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-        }
-
-        /* Heading text */
-        .heading-text {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 20px;
-        }
-
-        /* Input and button container */
-
-        /* Email input */
-        .email-input {
-            flex: 1;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-
-        /* Submit button */
-        .submit-btn {
-            padding: 10px 15px;
-            background-color: #007BFF;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
         @media screen and (min-width: 1200px) {
             .cards-container {
                 display: grid;
                 grid-template-columns: 21.25rem 21.25rem 21.25rem;
+                padding: 0 32px 0 32px;
                 justify-content: center;
+                grid-gap: 24px;
             }
         }
 
@@ -76,16 +29,65 @@
                 display: grid;
                 grid-template-columns: 21.25rem 21.25rem;
                 justify-content: center;
+                grid-gap: 24px;
             }
         }
 
-            @media screen and (max-width: 767px) {
-                .cards-container {
-                    display: grid;
-                    grid-template-columns: 21.25rem;
-                    justify-content: center;
-                }
+        @media screen and (max-width: 767px) {
+            .cards-container {
+                display: grid;
+                grid-template-columns: 21.25rem;
+                justify-content: center;
+                grid-gap: 24px;
             }
+        }
+
+        .main-container {
+            padding: 64px 0 64px 0;
+        }
+
+        .main-one {
+            display: flex;
+            width: 76rem;
+            height: 12rem;
+            padding: 40px 64px 40px 64px;
+            background-color: #F8F9FB;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+        }
+
+
+        .maincontainertwo {
+            padding: 40px 32px 40px 32px;
+        }
+
+        .main-two {
+            width: 704px;
+            height: 192px;
+            padding: 32px;
+            background-color: #F8F9FB;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+
+        }
+
+
+        .maincontainerthree {
+            padding: 2rem 1rem 2rem 1rem;
+        }
+
+
+        .main-three {
+            width: 343px;
+            height: 294px;
+            padding: 16px;
+            background-color: #F8F9FB;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+        }
     </style>
 </head>
 
@@ -210,10 +212,11 @@
 
 
 
-    <!--this section is not correct will do it later-->
+    <!--==================================================================s-->
 
 
     <div class="cards-container">
+
         <div class="card" style="width: 21.25rem; background-color: #FFFF; border: 1px solid #EAEBF0">
             <div class="card-body">
                 <a href="#" class="btn" style="color: black; border: 1px solid #DAE0E6; float: right">Show More</a>
@@ -222,6 +225,8 @@
                 <p class="card-text" style="color: grey">Enim nec rhoncus volutpat nullam eros sapien pharetra.</p>
             </div>
         </div>
+
+
         <div class="card" style="width: 21.25rem; background-color: #FFFF; border: 1px solid #EAEBF0">
             <div class="card-body">
                 <a href="#" class="btn" style="color: black; border: 1px solid #DAE0E6; float: right">Show More</a>
@@ -231,6 +236,8 @@
                 </p>
             </div>
         </div>
+
+
         <div class="card" style="width: 21.25rem; background-color: #FFFF; border: 1px solid #EAEBF0">
             <div class="card-body">
                 <a href="#" class="btn" style="color: black; border: 1px solid #DAE0E6; float: right">Show More</a>
@@ -239,9 +246,10 @@
                 <p class="card-text" style="color: grey">Aliquet et cras nam sed mauris laoreet bibendum et.</p>
             </div>
         </div>
-    </div>
 
-    <div class="cards-container">
+
+
+
         <div class="card" style="width: 21.25rem; background-color: #FFFF; border: 1px solid #EAEBF0">
             <div class="card-body">
                 <a href="#" class="btn" style="color: black; border: 1px solid #DAE0E6; float: right">Show More</a>
@@ -251,6 +259,8 @@
                 </p>
             </div>
         </div>
+
+
         <div class="card" style="width: 21.25rem; background-color: #FFFF; border: 1px solid #EAEBF0">
             <div class="card-body">
                 <a href="#" class="btn" style="color: black; border: 1px solid #DAE0E6; float: right">Show More</a>
@@ -259,7 +269,9 @@
                 <p class="card-text" style="color: grey">Mauris orci eget iaculis placerat euismod at urna posuere.</p>
             </div>
         </div>
-        <div class="card" style="width: 21.25rem; background-color: #FFFF; border: 1px solid #EAEBF0">
+
+
+        <div class="card" style="width: 21.25rem; background-color: #FFFF; border: 1px solid #EAEBF0;">
             <div class="card-body">
                 <a href="#" class="btn" style="color: black; border: 1px solid #DAE0E6; float: right">Show More</a>
                 <img src="Icons/Icon10.png" alt="">
@@ -267,9 +279,8 @@
                 <p class="card-text" style="color: grey">Mauris orci eget iaculis placerat euismod at urna posuere.</p>
             </div>
         </div>
+
     </div>
-
-
 
     <!--=============================================================================-->
 
@@ -535,8 +546,8 @@
             <div id="page-id-eight-one" style="max-width: 50rem;">Completely synergize resource taxing relationships via
                 premier niche markets. Professionally cultivate one-to-one customer service with robust ideas.</div>
         </div>
-        <div class="cards-design">
-            <div class="card" style="width: 24rem;">
+        <div class="cards-designone">
+            <div class="card" style="width: 24rem; background-color: #fff; border: 1px solid #EAEBF0;">
                 <img class="card-img-top" src="Pictures/Switch1.png" alt="Card image cap">
                 <div class="card-body">
                     <img src="Pictures/Container1.png" alt="">
@@ -551,7 +562,7 @@
 
 
 
-            <div class="card" style="width: 24rem;">
+            <div class="card" style="width: 24rem; background-color: #fff; border: 1px solid #EAEBF0;">
                 <img class="card-img-top" src="Pictures/Switch2.png" alt="Card image cap">
                 <div class="card-body">
                     <img src="Pictures/Container2.png" alt="">
@@ -566,7 +577,7 @@
 
 
 
-            <div class="card" style="width: 24rem;">
+            <div class="card" style="width: 24rem; background-color: #fff; border: 1px solid #EAEBF0;">
                 <img class="card-img-top" src="Pictures/Switch3.png" alt="Card image cap">
                 <div class="card-body">
                     <img src="Pictures/Container3.png" alt="">
@@ -612,28 +623,103 @@
     </div>
 
 
-    <div style="padding: 4rem 0 4rem 0;">
-        <div class="card" style="display: flex;">
-            <div>
-                <div class="industry-text">1% of the industry</div>
-                <div class="heading-text">Welcome to your new digital reality that will rock your world.</div>
+
+    <script>
+        function showAppropriateLayoutFive() {
+            var screenWidth2 = $(window).width();
+
+            if (screenWidth2 >= 1200) {
+                $(".main-container").show();
+                $(".maincontainertwo").hide();
+                $(".maincontainerthree").hide();
+            } else if (screenWidth2 < 1200 && screenWidth2 > 690) {
+                $(".main-container").hide();
+                $(".maincontainertwo").show();
+                $(".maincontainerthree").hide();
+            }
+            else {
+                $(".main-container").hide();
+                $(".maincontainertwo").hide();
+                $(".maincontainerthree").show();
+            }
+        }
+
+        $(document).ready(function () {
+            showAppropriateLayoutFive();
+            $(window).on('resize', showAppropriateLayoutFive);
+        });
+    </script>
+
+
+    <div class="main-container">
+        <div class="main-one" style="display: flex; align-items: center ;">
+            <div class="textone">
+                <p
+                    style="color: #437EF7; width: 9.125rem; height: 1.25rem; font-weight: 600; font-size: 0.875rem; line-height: 1.25rem; letter-spacing: -0.006rem  ;">
+                    1% OF THE INDUSTRY</p>
+                <P
+                    style="width: 35.5rem; height: 5.25rem; font-weight: 600; font-size: 2rem; line-height: 2.625rem; letter-spacing: -1%;">
+                    Welcome to your new digital reality that will rock your world.</P>
             </div>
 
-
-            <!-- Input and button container -->
-            <div class="input-container">
-                <!-- Email input -->
-                <input type="email" class="email-input" placeholder="Enter your email">
-
-                <!-- Submit button -->
-                <button type="submit" class="submit-btn">Submit</button>
+            <div class="inputone">
+                <input type="email" placeholder="Enter Your Email" style="width:22.063rem; height: 2.875rem; border: 1px solid 
+                #DAE0E6; border-radius: 0.375; padding: 0.75rem 1rem 0.75rem 1rem">
+                <button
+                    style="width:5.5rem; height: 2.875rem; border-radius: 0.375rem; background-color: #437EF7; color: white; border: none; margin-left: 0">Submit</button>
             </div>
         </div>
     </div>
 
 
 
-    <script>
+
+
+    <div class="maincontainertwo">
+        <div class="main-two">
+            <div class="texttwo">
+                <p
+                    style="color: #437EF7; width: 9.125rem; height: 1.25rem; font-weight: 600; font-size: 0.875rem; line-height: 1.25rem; letter-spacing: -0.006rem  ;">
+                    1% OF THE INDUSTRY</p>
+                <P
+                    style="width: 40rem; height: 5.25rem; font-weight: 600; font-size: 2rem; line-height: 2.625rem; letter-spacing: -1%;">
+                    Welcome to your new digital reality that will rock your world.</P>
+            </div>
+
+            <div class="inputtwo">
+                <input type="email" placeholder="Enter Your Email" style="width:34.5rem; height: 2.875rem; border: 1px solid 
+                #DAE0E6; border-radius: 0.375; padding: 0.75rem 1rem 0.75rem 1rem">
+                <button
+                    style="width:5rem; height: 2.875rem; border-radius: 0.375rem; background-color: #437EF7; color: white; border: none; margin-left: 0">Submit</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="maincontainerthree">
+        <div class="main-three">
+            <div class="textthree">
+                <p
+                    style="color: #437EF7; width: 146px; height: 20px; font-weight: 600; font-size: 0.875rem; line-height: 1.25rem; letter-spacing: -0.006rem  ;">
+                    1% OF THE INDUSTRY</p>
+                <P
+                    style="width: 311px; height: 108px; font-weight: 600; font-size: 28px; line-height: 36px; letter-spacing: -2%;">
+                    Welcome to your new digital reality that will rock your world.</P>
+            </div>
+
+            <div class="inputthree">
+                <input type="email" placeholder="Your e-mail..." style="width:311px; height: 46px; border: 1px solid 
+                #DAE0E6; border-radius: 0.375; padding: 0.75rem 1rem 0.75rem 1rem; margin-bottom: 8px">
+                <button
+                    style="width:311px; height: 48px; border-radius: 0.375rem; background-color: #437EF7; color: white; border: none; padding: 12px 18px 12px 18px;">Submit</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- <script>
         function showAppropriateLayoutFourth() {
             var screenWidth2 = $(window).width();
 
@@ -683,9 +769,291 @@
                 <img src="Pictures/Containermbl.png" alt="">
             </div>
         </div>
+    </div> -->
+
+
+    <script>
+        function showAppropriateLayoutSix() {
+            var screenWidth2 = $(window).width();
+
+            if (screenWidth2 >= 1200) {
+                $(".footer").show();
+                $(".footertwo").hide();
+                $(".footerthree").hide();
+            } else if (screenWidth2 < 1200 && screenWidth2 > 557) {
+                $(".footer").hide();
+                $(".footertwo").show();
+                $(".footerthree").hide();
+            }
+            else {
+                $(".footer").hide();
+                $(".footertwo").hide();
+                $(".footerthree").show();
+            }
+        }
+
+        $(document).ready(function () {
+            showAppropriateLayoutSix();
+            $(window).on('resize', showAppropriateLayoutSix);
+        });
+    </script>
+
+
+
+
+    <div class="footer">
+        <div class="footerdata d-flex">
+            <div><img src="Pictures/Lookscout.png" alt="">
+                <p style="width: 247px; height:72px; font-weight: 400; font-size: 16px; line-height: 24px; letter-spacing: -0.1px; color: 
+                #5F6D7E; margin-top: 0.5rem">Generate outside the box thinking with the possibility to targtet the low.
+                </p>
+                <a href=""><img src="Icons/Social icons.png" alt=""></a>
+            </div>
+
+            <div>
+                <p
+                    style="width:70px; height:20px;font-weight: 600; font-size: 16px;line-height: 24px; letter-spacing: -0.1px;">
+                    Products</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Features</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Solutions</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Integrations</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Enterprise</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Solutions</p>
+            </div>
+
+
+            <div>
+                <p
+                    style="width:70px; height:20px;font-weight: 600; font-size: 16px;line-height: 24px; letter-spacing: -0.1px;">
+                    Resources</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Partners</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Community</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Developers</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    App</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Blog</p>
+            </div>
+
+
+            <div>
+                <p
+                    style="width:131px; height:24px;font-weight: 600; font-size: 16px;line-height: 24px; letter-spacing: -0.1px;">
+                    Why Choose Us?</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Chaneels</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Scale</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Watch the Demo</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Our Competition</p>
+            </div>
+
+            <div>
+                <p
+                    style="width:131px; height:24px;font-weight: 600; font-size: 16px;line-height: 24px; letter-spacing: -0.1px;">
+                    Company</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    About Us</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    News</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Leadership</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Media Kit</p>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center; margin-left: auto; margin-right: auto;"><img src="Icons/Icon.png" alt=""></div>
+        <div style="display: flex; justify-content: center;">
+            <p
+                style="font-weight: 400; font-size: 16px; line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E; margin-top: 1rem;">
+                © 2023 Lookscout. All Rights Reserved.</p>
+        </div>
+
+
     </div>
 
 
+    <div class="footertwo">
+
+        <div class="footerdatatwo">
+            <div style="grid-column: span 2;"><img src="Pictures/Company Logo.png" alt="">
+                <p style="width: 247px; height:72px; font-weight: 400; font-size: 16px; line-height: 24px; letter-spacing: -0.1px; color: 
+                #5F6D7E; margin-top: 0.5rem">Generate outside the box thinking with the possibility to targtet the low.
+                </p>    
+            </div>
+
+
+            <div>
+                <p
+                    style="width:70px; height:20px;font-weight: 600; font-size: 16px;line-height: 24px; letter-spacing: -0.1px;">
+                    About Us</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Our Competition</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Channels</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Scale</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Watch the Demmo</p>
+            </div>
+
+            <div>
+                <p
+                    style="width:70px; height:20px;font-weight: 600; font-size: 16px;line-height: 24px; letter-spacing: -0.1px;">
+                    Products</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Features</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Integrations</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Enterprise</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Solutions</p>
+            </div>
+
+
+            <div>
+                <p
+                    style="width:70px; height:20px;font-weight: 600; font-size: 16px;line-height: 24px; letter-spacing: -0.1px;">
+                    Resources</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Partners</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Developers</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Community</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Apps</p>
+            </div>
+
+
+            <div>
+                <p
+                    style="width:70px; height:20px;font-weight: 600; font-size: 16px;line-height: 24px; letter-spacing: -0.1px;">
+                    Comapny</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    About Us</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Leadership</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    News</p>
+            </div>
+
+
+        </div>
+
+
+        <div style="display: flex; justify-content: center; margin-left: auto; margin-right: auto;"><img src="Icons/Icon.png" alt="" style="margin-right: 3.5rem;"></div>
+        <div style="display: flex;">
+            <img src="Icons/Horizontal container.png" alt="" style="margin-top: 1rem; margin-bottom: 1rem;">
+        </div>
+    </div>
+
+
+
+
+    <div class="footerthree">
+        <div class="footerdatathree">
+            <div style="grid-column: span 2;"><img src="Pictures/Company Logo.png" alt="">
+                <p style="width: 343px; height:48px; font-weight: 400; font-size: 16px; line-height: 24px; letter-spacing: -0.1px; color: 
+                #5F6D7E; margin-top: 0.5rem">Generate outside the box thinking with the possibility to targtet the low.
+                </p>
+                <a href="#"><img src="Icons/Social icons (2).png" alt="" style="margin-bottom: 1rem;"></a>
+            </div>
+
+            <div>
+                <p
+                    style="width:70px; height:20px;font-weight: 600; font-size: 16px;line-height: 24px; letter-spacing: -0.1px;">
+                    Products</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Features</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Solutions</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Integrations</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Enterprise</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Solutions</p>
+            </div>
+
+            <div>
+                <p
+                    style="width:70px; height:20px;font-weight: 600; font-size: 16px;line-height: 24px; letter-spacing: -0.1px;">
+                    Resources</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Partners</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Community</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Developers</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    App</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Blog</p>
+            </div>
+
+            <div style="margin-top: 2rem;">
+                <p
+                    style="width:131px; height:24px;font-weight: 600; font-size: 16px;line-height: 24px; letter-spacing: -0.1px;">
+                    Why Choose Us?</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Chaneels</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Scale</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Watch the Demo</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Our Competition</p>
+            </div>
+
+            <div style="margin-top: 2rem;">
+                <p
+                    style="width:131px; height:24px;font-weight: 600; font-size: 16px;line-height: 24px; letter-spacing: -0.1px;">
+                    Company</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    About Us</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    News</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Leadership</p>
+                <p style="font-weight: 500; font-size: 16px;line-height: 24px; letter-spacing: -0.1px; color: #5F6D7E;">
+                    Media Kit</p>
+            </div>
+            
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="Icons/Icon.png" alt="" style="margin-top: 1rem; margin-left: 8rem;">
+            </div>
+            
+            <div style="display: block; text-align: center; margin-top: 1rem;">
+                <p style="display: block; /* Force the paragraph to be a block-level element */
+                          font-weight: 400; 
+                          font-size: 16px; 
+                          line-height: 24px; 
+                          letter-spacing: -0.1px; 
+                          color: #5F6D7E;">
+                    © 2023 Lookscout. All Rights Reserved.
+                </p>
+            </div>
+              
+            
+            
+
+
+
+
+        </div>
+    </div>
 
 
 
