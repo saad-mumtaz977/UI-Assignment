@@ -295,7 +295,7 @@
     /* Maintain the aspect ratio */
 }
 
-#layout3 {}
+
 
 #bluepage {
     background-color: #2B63D9;
@@ -345,42 +345,42 @@ h3 {
     /* Maintain the aspect ratio */
 }
 
-.cards-design {
+.cards-designone {
     display: grid;
 }
 
 /* For screens with width >= 1200px */
 @media screen and (min-width: 1200px) {
-    .cards-design {
+    .cards-designone {
         justify-content: center;
         margin-top: 1.5rem;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 24rem);
         margin-bottom: 1.5rem;
     }
 }
 
 /* For screens with width < 1200px and >= 768px (tablets) */
 @media screen and (max-width: 1199px) {
-    .cards-design {
+    .cards-designone {
         justify-content: center;
         margin-top: 1.5rem;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 24rem);
         margin-bottom: 1.5rem;
     }
 }
 
 /* For screens with width < 768px (mobile) */
 @media screen and (max-width: 767px) {
-    .cards-design {
+    .cards-designone {
         justify-content: center;
         margin-top: 1.5rem;
-        grid-template-columns: 1fr;
+        grid-template-columns: 24rem;
         margin-bottom: 1.5rem;  
     }
 }
 
 /* Center-align the cards within each grid item */
-.cards-design .card {
+.cards-designone .card {
     justify-self: center;
 }
 
@@ -422,4 +422,60 @@ h3 {
     align-items: center;
     justify-content: center;
     padding: 1rem; /* Add padding for better spacing */
+}
+
+
+
+.footer{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4rem 0 4rem 0;
+}
+
+.footerdata{
+    display: grid;
+    width: 80rem;
+    height: 23rem;
+    padding: 0 2rem 0 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 15.438rem 15.438rem 15.438rem 15.438rem 15.438rem ;
+    grid-template-rows: 13.5rem;
+    justify-content: space-between;
+}
+
+
+
+
+.footertwo{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 32px 40px 32px;
+}
+
+
+.footerdatatwo{
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 12rem 12rem 12rem;
+    grid-template-rows: 11.25rem 11.25rem 11.25rem;
+    justify-content: space-between;
+}
+
+
+.footerthree{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 32px 16px 32px 16px;
+    margin-top: 1rem;
+}
+
+.footerdatathree{
+    width: 21.438rem;
+    height: 36.25rem;
+    display: grid;
+    grid-template-columns: 146px 146px;
+    grid-template-rows: 152px 208px 200px;
+    grid-gap: 16px;
+    justify-content: space-between;
 }
